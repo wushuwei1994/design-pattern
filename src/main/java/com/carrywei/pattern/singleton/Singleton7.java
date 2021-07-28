@@ -24,7 +24,5 @@ public class Singleton7 {
         Singleton7 instance1 = Singleton7.getInstance();
         Singleton7 instance2 = Singleton7.getInstance();
         System.out.println(instance1 == instance2);
-
-        Singleton8 instance8 = Singleton8.INSTANCE;
     }
 }

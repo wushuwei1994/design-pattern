@@ -31,10 +31,27 @@ public class Singleton6 {
 //        Singleton6 instance2 = Singleton6.getInstance();
 //        System.out.println(instance1 == instance2);
 
-        for (int i = 0; i < 50; i++) {
-            new Thread(() -> {
-                Singleton6.getInstance();
-            }).start();
+//        for (int i = 0; i < 50; i++) {
+//            new Thread(() -> {
+//                Singleton6.getInstance();
+//            }).start();
+//        }
+        System.out.println(test());
+
+    }
+
+    public static char test() {
+        String s = "abc";
+        try {
+//            s.charAt(4);
+            return s.charAt(8);
+        } catch (Exception e) {
+//            e.printStackTrace();
+            throw new Exception();
+//            return 'b';
+        } finally {
+            System.out.println("你好");
+            return 'a';
         }
     }
 }

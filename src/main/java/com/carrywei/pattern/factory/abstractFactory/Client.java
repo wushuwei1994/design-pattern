@@ -10,12 +10,14 @@ import com.carrywei.pattern.factory.product.IProduct;
  **/
 public class Client {
     public static void main(String[] args) {
+        // A系统产品
         AbstractFactory aFactory = new AFactory();
         IProduct aProduct = aFactory.createProduct();
         ICard aCard = aFactory.createCard();
         aProduct.display();
         aCard.display();
 
+        // B系列产品
         AbstractFactory bFactory = new BFactory();
         IProduct bProduct = bFactory.createProduct();
         ICard bCard = bFactory.createCard();

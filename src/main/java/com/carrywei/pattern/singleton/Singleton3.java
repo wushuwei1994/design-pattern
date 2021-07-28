@@ -30,8 +30,5 @@ public class Singleton3 {
                 Singleton3.getInstance();
             }).start();
         }
-
     }
-
-
 }

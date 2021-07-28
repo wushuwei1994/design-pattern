@@ -13,20 +13,20 @@ public class Singleton5 {
     }
 
     public static Singleton5 getInstance() {
-//        synchronized (Singleton5.class) {
-//            if (instance == null) {
-//                instance = new Singleton5();
-//            }
-//        }
-//        return instance;
-
-
+        synchronized (Singleton5.class) {
+            if (instance == null) {
+                instance = new Singleton5();
+            }
+        }
+        return instance;
+//
+//
 //        if (instance == null) {
 //            synchronized (Singleton5.class){
 //                instance = new Singleton5();
 //            }
 //        }
-        return instance;
+//        return instance;
     }
 
     public static void main(String[] args) {
